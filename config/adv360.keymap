@@ -1,11 +1,8 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
-
-
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -13,70 +10,82 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
+    behaviors {
+        #include "macros.dtsi"
     #include "version.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        hml: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <52 53 65 66 67 68 69 70 35 36 37 38 70 71 7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75>;
+        };
+
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <35 36 37 38 52 53 65 66 67 68 69 70 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66>;
+        };
     };
-  };
 
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
- &kp LEFT_BRACKET       &kp N7          &kp N5          &kp N3            &kp N1            &kp N9            &caps_word                                                             &kp CAPS        &kp N0             &kp N2           &kp N4      &kp N6       &kp N8  &kp RBKT
-        &kp GRAVE        &kp B      &mt RALT Y           &kp O             &kp U  &kp SINGLE_QUOTE                 &sl 1                                                                &sl 3      &kp SEMI              &kp L            &kp D  &mt RALT W        &kp V    &kp AT
-            &kp Z  &mt LCTRL C  &mt LEFT_ALT I  &mt LEFT_GUI E  &mt LEFT_SHIFT A         &kp COMMA                 &sl 2  &kp ESC  &sk LCTRL                   &sk RCMD    &kp TAB      &to 0       &kp DOT  &mt RIGHT_SHIFT H  &mt RIGHT_GUI T  &mt LALT S  &mt RCTRL N     &kp Q
-            &sl 1        &kp G           &kp X           &kp J             &kp K         &kp MINUS                                  &kp HOME                  &kp PG_UP                        &kp QUESTION              &kp R            &kp M       &kp F        &kp P     &sl 1
-        &kp EQUAL     &kp LPAR        &kp LBKT        &kp RBKT          &kp RPAR                                &kp BSPC  &kp DEL    &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE                         &kp LEFT         &kp DOWN      &kp UP    &kp RIGHT  &kp BSLH
+&kp LEFT_BRACKET  &kp N7           &kp N5       &kp N3        &kp N1             &kp N9            &caps_word                                                &kp CAPS   &kp N0        &kp N2             &kp N4           &kp N6      &kp N8       &kp RBKT
+&kp GRAVE         &kp B            &hml RALT Y  &kp O         &kp U              &kp SINGLE_QUOTE  &sl 1                                                     &sl 3      &kp SEMI      &kp L              &kp D            &mt RALT W  &kp V        &kp AT
+&kp Z             &hml LEFT_GUI C  &hml LALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2       &kp ESC  &sk LCTRL      &sk RCMD   &kp TAB    &to 0      &kp DOT       &mt RIGHT_SHIFT H  &mt RIGHT_GUI T  &mt LALT S  &mt RCTRL N  &kp Q
+&sl 1             &kp G            &kp X        &kp J         &kp K              &kp MINUS                              &kp HOME       &kp PG_UP                        &kp QUESTION  &kp R              &kp M            &kp F       &kp P        &sl 1
+&kp EQUAL         &kp LPAR         &kp LBKT     &kp RBKT      &kp RPAR                             &kp BSPC    &kp DEL  &kp END        &kp PG_DN  &kp ENTER  &kp SPACE                &kp LEFT           &kp DOWN         &kp UP      &kp RIGHT    &kp BSLH
             >;
         };
 
         layer_keypad {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL     &trans   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                             &trans        &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                             &trans  &bootloader       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD           &trans        &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                               &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none            &bl BL_TOG  &rgb_ug RGB_TOG               &bl BL_INC  &bl BL_DEC   &none   &none   &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                            &trans           &none        &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                      &trans           &bootloader  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &rgb_ug RGB_MEFS_CMD  &trans           &none        &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                              &none        &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG            &rgb_ug RGB_TOG               &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
-
     };
 };
