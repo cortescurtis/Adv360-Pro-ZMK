@@ -90,11 +90,11 @@
 
         Symbols {
             bindings = <
-&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &trans                                                             &trans  &trans          &trans        &kp RALT      &trans     &trans  &trans
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &trans                                                             &trans  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &trans  &trans
-&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &trans     &kp NON_US_BACKSLASH  &kp ASTERISK      &trans  &trans  &trans  &kp BACKSPACE   &kp TAB       &kp SPACE     &kp RET    &trans  &trans
-&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                                      &kp PERIOD        &trans                  &kp DELETE      &kp LS(TAB)   &trans        &trans     &trans  &trans
-&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON         &kp PERCENT       &trans  &trans  &trans                  &trans        &trans        &trans     &trans  &trans
+&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                            &none   &none  &none           &none         &kp RALT   &none      &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                            &none   &none  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
+&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp NON_US_BACKSLASH  &kp ASTERISK      &none  &none  &trans  &none  &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
+&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                                      &kp PERIOD        &none                 &none  &kp LS(DELETE)  &kp LS(TAB)   &none      &none      &none
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON         &kp PERCENT       &none  &none  &trans         &none           &none         &none      &none      &none
             >;
         };
     };
