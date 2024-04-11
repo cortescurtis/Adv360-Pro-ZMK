@@ -52,7 +52,7 @@
             bindings = <
 &kp LEFT_BRACKET  &kp N7        &kp N5       &kp N3           &kp N1             &kp N9            &caps_word                                                &kp CAPS     &kp N0     &kp N2              &kp N4            &kp N6           &kp N8        &kp RBKT
 &kp GRAVE         &kp B         &hml RALT Y  &kp O            &kp U              &kp SINGLE_QUOTE  &sl 1                                                     &sl 3        &kp SEMI   &kp L               &kp D             &hmr RALT W      &kp V         &kp AT
-&kp Z             &hml LCTRL C  &hml LALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2       &kp ESC  &sk LCTRL      &sk RCMD   &kp TAB    &to 0        &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RCTRL N  &kp Q
+&kp Z             &hml LCTRL C  &hml LALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2       &kp ESC  &sk LCTRL      &sk RCMD   &kp TAB    &to 4        &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RCTRL N  &kp Q
 &sl 1             &kp G         &kp X        &kp J            &kp K              &kp MINUS                              &kp HOME       &kp PG_UP                          &kp SLASH  &kp R               &kp M             &kp F            &kp P         &sl 1
 &kp EQUAL         &kp LPAR      &kp LBKT     &kp RBKT         &kp RPAR                             &kp BSPC    &kp DEL  &kp END        &kp PG_DN  &kp ENTER  &lt 4 SPACE             &kp LEFT            &kp DOWN          &kp UP           &kp RIGHT     &kp BSLH
             >;
