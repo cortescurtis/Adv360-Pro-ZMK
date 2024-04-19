@@ -47,6 +47,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Z_Comb {
+            bindings = <&kp Z>;
+            key-positions = <16 17>;
+        };
+
+        Q_Comb {
+            bindings = <&kp Q>;
+            key-positions = <24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
