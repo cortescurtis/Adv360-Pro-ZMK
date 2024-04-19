@@ -50,11 +50,11 @@
 
         Engrammer {
             bindings = <
-&kp LEFT_BRACKET  &kp N7        &kp N5       &kp N3           &kp N1             &kp N9            &caps_word                                                                            &kp CAPS     &kp N0     &kp N2              &kp N4            &kp N6           &kp N8        &kp RBKT
-&kp GRAVE         &kp B         &hml RALT Y  &kp O            &kp U              &kp SINGLE_QUOTE  &sl 1                                                                                 &sl 3        &kp SEMI   &kp L               &kp D             &hmr RALT W      &kp V         &kp AT
-&kp LEFT_SHIFT    &hml LCTRL C  &hml LALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2            &mt LCTRL ESC  &kp LEFT_ALT      &sk RCMD     &mt RIGHT_CONTROL TAB  &to 4        &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RCTRL N  &kp RIGHT_SHIFT
-&kp Z             &kp G         &kp X        &kp J            &kp K              &kp MINUS                                         &kp HOME          &kp PG_UP                                        &kp SLASH  &kp R               &kp M             &kp F            &kp P         &kp Q
-&kp EQUAL         &kp LPAR      &kp LBKT     &kp RBKT         &kp RPAR                             &lt 1 BACKSPACE  &lt 2 DELETE   &lt 5 END         &lt 5 PG_DN  &lt 3 RET              &lt 4 SPACE             &kp LEFT            &kp DOWN          &kp UP           &kp RIGHT     &kp BSLH
+&kp LEFT_BRACKET  &kp N7        &kp N5       &kp N3           &kp N1             &kp N9            &caps_word                                                                                                  &kp CAPS               &kp N0     &kp N2              &kp N4            &kp N6           &kp N8        &kp RBKT
+&kp GRAVE         &kp B         &hml RALT Y  &kp O            &kp U              &kp SINGLE_QUOTE  &sl 1                                                                                                       &sl 3                  &kp SEMI   &kp L               &kp D             &hmr RALT W      &kp V         &kp AT
+&kp LEFT_SHIFT    &hml LCTRL C  &hml LALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2                     &mt LCTRL ESC  &kp LCMD               &sk RCMD             &mt RIGHT_CONTROL TAB  &to 4                  &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RCTRL N  &kp RIGHT_SHIFT
+&kp Z             &kp G         &kp X        &kp J            &kp K              &kp MINUS                                                  &mt LEFT_ALT HOME      &mt RIGHT_ALT PG_UP                                                &kp SLASH  &kp R               &kp M             &kp F            &kp P         &kp Q
+&kp EQUAL         &kp LPAR      &kp LBKT     &kp RBKT         &kp RPAR                             &mt LEFT_SHIFT BACKSPACE  &lt 2 DELETE   &lt 1 END              &lt 3 PG_DN          &lt 4 RET              &mt RIGHT_SHIFT SPACE             &kp LEFT            &kp DOWN          &kp UP           &kp RIGHT     &kp BSLH
             >;
         };
 
