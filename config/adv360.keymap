@@ -117,9 +117,9 @@
 
         Symbols {
             bindings = <
-&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &mo 5                                                     &mo 5   &none  &none           &none         &kp RALT   &none      &none
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &trans                                                    &trans  &none  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
-&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &trans     &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &none  &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
+&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &mo 5   &none  &none           &none         &kp RALT   &none      &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                     &trans  &none  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
+&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &none  &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
 &kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &kp PERIOD        &none                 &none  &kp DEL         &kp LS(TAB)   &none      &none      &none
 &kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON  &kp PERCENT       &none  &none  &trans         &none           &none         &none      &none      &none
             >;
