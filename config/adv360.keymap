@@ -97,21 +97,21 @@
 
         Keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &mo 5                                                    &mo 5                 &kp N6      &kp N7        &kp N8           &kp N9      &kp N0        &kp MINUS
-&none      &none      &kp RALT  &none     &none      &none   &trans                                                   &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_MINUS  &kp KP_DIVIDE
-&none      &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp COMMA  &kp LT                &kp GT      &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS   &kp KP_MULTIPLY
-&none      &none      &none     &none     &none      &none                        &kp HOME      &kp PG_UP                                   &kp DOLLAR  &kp KP_N1     &kp KP_N2        &kp KP_N3   &kp KP_ENTER  &kp PERCENT
-&none      &none      &none     &none     &none              &kp BSPC  &trans     &kp END       &kp PG_DN  &kp DOT    &kp KP_N0                         &kp KP_EQUAL  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_NUMLOCK
+&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4              &kp N5  &mo 5                                                                              &mo 5                        &kp N6      &kp N7        &kp N8           &kp N9      &kp N0        &kp MINUS
+&none      &none      &mt RALT N6      &kp N8           &kp N9              &none   &trans                                                                             &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_MINUS  &kp KP_DIVIDE
+&none      &kp LCTRL  &mt LEFT_ALT N4  &mt LEFT_GUI N5  &mt RIGHT_SHIFT N5  &none   &trans    &kp LCTRL  &kp LALT      &kp LGUI             &mt RIGHT_CONTROL COMMA    &kp LT                       &kp GT      &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS   &kp KP_MULTIPLY
+&none      &none      &kp N1           &kp N2           &kp N3              &none                        &kp HOME      &mt LEFT_ALT PG_UP                                                           &kp DOLLAR  &kp KP_N1     &kp KP_N2        &kp KP_N3   &kp KP_ENTER  &kp PERCENT
+&none      &none      &kp EQUAL        &kp N0           &kp DOT                     &kp BSPC  &trans     &kp END       &mt RIGHT_ALT PG_DN  &mt LS(LA(LG(LCTRL))) DOT  &mt RIGHT_SHIFT KP_NUMBER_0              &kp KP_EQUAL  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_NUMLOCK
             >;
         };
 
         Functions {
             bindings = <
-&kp F1  &kp F2  &kp F3   &kp F4   &kp F5   &kp F6   &mo 5                                    &mo 5   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12
-&none   &none   &kp F13  &kp F14  &kp F15  &kp F16  &trans                                   &trans  &kp F17  &kp F18  &kp F19  &kp F20  &none    &none
-&none   &none   &none    &none    &none    &none    &trans  &none  &none      &none  &none   &trans  &none    &none    &none    &none    &none    &none
-&none   &none   &none    &none    &none    &none                   &none      &none                  &none    &none    &none    &none    &none    &none
-&none   &none   &none    &none    &none             &none   &none  &none      &none  &trans  &none            &none    &none    &none    &none    &none
+&kp F1  &kp F2            &kp F3         &kp F4            &kp F5          &kp F6   &mo 5                                    &mo 5   &kp F7   &kp F8           &kp F9    &kp F10       &kp F11            &kp F12
+&none   &none             &kp F13        &kp F14           &kp F15         &kp F16  &trans                                   &trans  &kp F17  &kp F18          &kp F19   &kp F20       &none              &none
+&none   &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none    &trans  &none  &none      &none  &none   &trans  &none    &kp RIGHT_SHIFT  &kp RCMD  &kp LEFT_ALT  &kp RIGHT_CONTROL  &none
+&none   &none             &kp RIGHT_ALT  &none             &none           &none                   &none      &none                  &none    &none            &none     &kp RALT      &none              &none
+&none   &none             &none          &none             &none                    &none   &none  &none      &none  &trans  &none            &none            &none     &none         &none              &none
             >;
         };
 
