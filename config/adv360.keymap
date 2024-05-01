@@ -63,11 +63,11 @@
         RetEngrammer {
             bindings = <&tog 0>;
             key-positions = <34 39>;
-            layers = <0 2 1 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         ToGaming {
-            bindings = <&tog 6>;
+            bindings = <&tog 4>;
             key-positions = <20 21>;
         };
     };
@@ -77,27 +77,17 @@
 
         Engrammer {
             bindings = <
-&kp F1       &kp F2    &kp F3    &kp F4    &kp F5    &kp F6            &caps_word                                                                                                  &lt 5 CAPS             &kp F7     &kp F8    &kp F9    &kp F10  &kp F11    &kp F12
-&kp GRAVE    &kp B     &kp Y     &kp O     &kp U     &kp SINGLE_QUOTE  &lt 1 DOUBLE_QUOTES                                                                                         &lt 3 COLON            &kp SEMI   &kp L     &kp D     &kp W    &kp V      &kp AMPS
-&kp HASH     &kp C     &kp I     &kp E     &kp A     &kp COMMA         &lt 2 LT                  &mt LCTRL ESC  &kp LCMD               &sk RCMD             &mt RIGHT_CONTROL TAB  &lt 4 GT               &kp DOT    &kp H     &kp T     &kp S    &kp N      &kp EXCL
+&kp F1       &kp F2    &kp F3    &kp F4    &kp F5    &kp F6            &caps_word                                                                                                  &lt 3 CAPS             &kp F7     &kp F8    &kp F9    &kp F10  &kp F11    &kp F12
+&kp GRAVE    &kp B     &kp Y     &kp O     &kp U     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                                                                           &kp COLON              &kp SEMI   &kp L     &kp D     &kp W    &kp V      &kp AMPS
+&kp HASH     &kp C     &kp I     &kp E     &kp A     &kp COMMA         &kp LT                    &mt LCTRL ESC  &kp LCMD               &sk RCMD             &mt RIGHT_CONTROL TAB  &kp GT                 &kp DOT    &kp H     &kp T     &kp S    &kp N      &kp EXCL
 &kp AT_SIGN  &kp G     &kp X     &kp J     &kp K     &kp MINUS                                                  &mt LEFT_ALT HOME      &mt RIGHT_ALT PG_UP                                                &kp SLASH  &kp R     &kp M     &kp F    &kp P      &kp PIPE
-&kp EQUAL    &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR                    &mt LEFT_SHIFT BACKSPACE  &lt 2 DELETE   &lt 1 END              &lt 3 PG_DN          &lt 4 RET              &mt RIGHT_SHIFT SPACE             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp BSLH
-            >;
-        };
-
-        Navigation {
-            bindings = <
-&none  &none      &none     &none     &none      &none  &mo 5                                   &mo 5   &none  &none     &none           &none      &none      &none
-&none  &none      &kp RALT  &none     &none      &none  &trans                                  &trans  &none  &kp H     &kp J           &kp K      &kp L      &none
-&none  &kp LCTRL  &kp LALT  &kp LGUI  &kp RSHFT  &none  &none   &none  &none      &none  &none  &trans  &none  &kp LEFT  &kp DOWN_ARROW  &kp UP     &kp RIGHT  &none
-&none  &none      &none     &none     &none      &none                 &none      &none                 &none  &kp HOME  &kp PG_DN       &kp PG_UP  &kp END    &none
-&none  &none      &none     &none     &none             &trans  &none  &none      &none  &none  &none          &none     &none           &none      &none      &none
+&kp EQUAL    &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR                    &mt LEFT_SHIFT BACKSPACE  &lt 1 DELETE   &lt 3 END              &lt 3 PG_DN          &lt 2 RET              &mt RIGHT_SHIFT SPACE             &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp BSLH
             >;
         };
 
         Keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4              &kp N5  &mo 5                                                                              &mo 5                        &kp N6      &kp N7        &kp N8           &kp N9      &kp N0        &kp MINUS
+&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4              &kp N5  &mo 3                                                                              &mo 3                        &kp N6      &kp N7        &kp N8           &kp N9      &kp N0        &kp MINUS
 &none      &none      &mt RALT N6      &kp N8           &kp N9              &none   &trans                                                                             &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_MINUS  &kp KP_DIVIDE
 &none      &kp LCTRL  &mt LEFT_ALT N4  &mt LEFT_GUI N5  &mt RIGHT_SHIFT N5  &none   &trans    &kp LCTRL  &kp LALT      &kp LGUI             &mt RIGHT_CONTROL COMMA    &kp LT                       &kp GT      &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS   &kp KP_MULTIPLY
 &none      &none      &kp N1           &kp N2           &kp N3              &none                        &kp HOME      &mt LEFT_ALT PG_UP                                                           &kp DOLLAR  &kp KP_N1     &kp KP_N2        &kp KP_N3   &kp KP_ENTER  &kp PERCENT
@@ -105,19 +95,9 @@
             >;
         };
 
-        Functions {
-            bindings = <
-&kp F1  &kp F2            &kp F3         &kp F4            &kp F5          &kp F6   &mo 5                                    &mo 5   &kp F7   &kp F8           &kp F9    &kp F10       &kp F11            &kp F12
-&none   &none             &kp F13        &kp F14           &kp F15         &kp F16  &trans                                   &trans  &kp F17  &kp F18          &kp F19   &kp F20       &none              &none
-&none   &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none    &trans  &none  &none      &none  &none   &trans  &none    &kp RIGHT_SHIFT  &kp RCMD  &kp LEFT_ALT  &kp RIGHT_CONTROL  &none
-&none   &none             &kp RIGHT_ALT  &none             &none           &none                   &none      &none                  &none    &none            &none     &kp RALT      &none              &none
-&none   &none             &none          &none             &none                    &none   &none  &none      &none  &trans  &none            &none            &none     &none         &none              &none
-            >;
-        };
-
         Symbols {
             bindings = <
-&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &mo 5   &none  &none           &none         &kp RALT   &none      &none
+&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &mo 3   &none  &none           &none         &kp RALT   &none      &none
 &kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                     &trans  &none  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
 &kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &none  &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
 &kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &kp PERIOD        &none                 &none  &kp DEL         &kp LS(TAB)   &none      &none      &none
