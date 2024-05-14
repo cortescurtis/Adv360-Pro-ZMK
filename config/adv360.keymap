@@ -77,7 +77,7 @@
 
         Engrammer {
             bindings = <
-&kp F1       &kp F2               &kp F3           &kp F4           &kp F5             &kp F6            &caps_word                                                                                                  &lt 3 CAPS             &kp F7     &kp F8              &kp F9            &kp F10          &kp F11               &kp F12
+&kp EQUAL    &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &caps_word                                                                                                  &lt 3 CAPS             &kp N6     &kp N7              &kp N8            &kp N9           &kp N0                &kp MINUS
 &kp GRAVE    &kp B                &kp Y            &kp O            &kp U              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                                                                           &kp COLON              &kp SEMI   &kp L               &kp D             &kp W            &kp V                 &kp AMPS
 &kp HASH     &hml LEFT_CONTROL C  &hml LEFT_ALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &kp LT                    &mt LCTRL ESC  &kp LCMD               &sk RCMD             &mt RIGHT_CONTROL TAB  &kp GT                 &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RIGHT_CONTROL N  &kp EXCL
 &kp AT_SIGN  &kp G                &kp X            &kp J            &kp K              &kp MINUS                                                  &mt LEFT_ALT HOME      &mt RIGHT_ALT PG_UP                                                &kp SLASH  &kp R               &kp M             &kp F            &kp P                 &kp PIPE
@@ -87,11 +87,11 @@
 
         Keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4              &kp N5  &mo 3                                                                              &mo 3                        &kp N6      &kp N7        &kp N8           &kp N9      &kp N0        &kp MINUS
-&none      &none      &mt RALT N6      &kp N8           &kp N9              &none   &trans                                                                             &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_MINUS  &kp KP_DIVIDE
-&none      &kp LCTRL  &mt LEFT_ALT N4  &mt LEFT_GUI N5  &mt RIGHT_SHIFT N5  &none   &trans    &kp LCTRL  &kp LALT      &kp LGUI             &mt RIGHT_CONTROL COMMA    &kp LT                       &kp GT      &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS   &kp KP_MULTIPLY
-&none      &none      &kp N1           &kp N2           &kp N3              &none                        &kp HOME      &mt LEFT_ALT PG_UP                                                           &kp DOLLAR  &kp KP_N1     &kp KP_N2        &kp KP_N3   &kp KP_ENTER  &kp PERCENT
-&none      &none      &kp EQUAL        &kp N0           &kp DOT                     &kp BSPC  &trans     &kp END       &mt RIGHT_ALT PG_DN  &mt LS(LA(LG(LCTRL))) DOT  &mt RIGHT_SHIFT KP_NUMBER_0              &kp KP_EQUAL  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_NUMLOCK
+&kp F1  &kp F2     &kp F3           &kp F4           &kp F5              &kp F6  &none                                                                              &none                        &kp F7      &kp F8        &kp F9           &kp F10     &kp F11       &kp F12
+&none   &none      &mt RALT N6      &kp N8           &kp N9              &none   &trans                                                                             &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7     &kp KP_N8        &kp KP_N9   &kp KP_MINUS  &kp KP_DIVIDE
+&none   &kp LCTRL  &mt LEFT_ALT N4  &mt LEFT_GUI N5  &mt RIGHT_SHIFT N5  &none   &trans    &kp LCTRL  &kp LALT      &kp LGUI             &mt RIGHT_CONTROL COMMA    &kp LT                       &kp GT      &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS   &kp KP_MULTIPLY
+&none   &none      &kp N1           &kp N2           &kp N3              &none                        &kp HOME      &mt LEFT_ALT PG_UP                                                           &kp DOLLAR  &kp KP_N1     &kp KP_N2        &kp KP_N3   &kp KP_ENTER  &kp PERCENT
+&none   &none      &kp EQUAL        &kp N0           &kp DOT                     &kp BSPC  &trans     &kp END       &mt RIGHT_ALT PG_DN  &mt LS(LA(LG(LCTRL))) DOT  &mt RIGHT_SHIFT KP_NUMBER_0              &kp KP_EQUAL  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_NUMLOCK
             >;
         };
 
@@ -107,11 +107,11 @@
 
         System {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                     &trans           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                                               &bootloader      &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &bt BT_CLR  &bt BT_CLR_ALL      &none  &rgb_ug RGB_MEFS_CMD  &none            &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &bt BT_SEL 4                           &none               &none                                         &none  &none       &none       &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &bt BT_PRV   &bt BT_NXT  &none               &none  &bl BL_TOG            &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &none                                                                     &trans           &kp F7  &kp F8      &kp F9      &kp F10  &kp F11  &kp F12
+&none   &none         &none         &none         &none         &none         &bootloader                                                               &bootloader      &none   &none       &none       &none    &none    &none
+&none   &none         &none         &none         &none         &none         &none        &bt BT_CLR  &bt BT_CLR_ALL      &none  &rgb_ug RGB_MEFS_CMD  &none            &none   &none       &none       &none    &none    &none
+&none   &none         &none         &none         &none         &bt BT_SEL 4                           &none               &none                                         &none   &none       &none       &none    &none    &none
+&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &bt BT_PRV   &bt BT_NXT  &none               &none  &bl BL_TOG            &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &none    &none    &none
             >;
         };
 
