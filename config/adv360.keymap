@@ -154,7 +154,7 @@
             >;
         };
 
-        Keypad {
+        FuncNumPad {
             bindings = <
 &kp F1  &kp F2     &kp F3        &kp F4            &kp F5              &kp F6         &none                                                                              &none                        &kp F7      &kp F8                  &kp F9                 &kp F10                    &kp F11             &kp F12
 &none   &none      &hmt RALT N7  &kp N8            &kp N9              &none          &trans                                                                             &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7               &kp KP_N8              &hmt RALT KP_NUMBER_9      &kp KP_MINUS        &kp KP_DIVIDE
@@ -166,11 +166,11 @@
 
         Symbols {
             bindings = <
-&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &none   &none          &none           &none         &kp RALT   &none      &none
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                     &trans  &none          &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
-&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &kp BACKSPACE  &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
-&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &kp PERIOD        &none                 &kp DEL        &kp DEL         &kp LS(TAB)   &none      &none      &none
-&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON  &kp PERCENT       &none  &none  &trans                 &none           &none         &none      &none      &none
+&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &none   &none             &none           &none         &kp RALT   &none      &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                     &trans  &kp LGUI          &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
+&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &kp LEFT_SHIFT    &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
+&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &kp PERIOD        &none                 &kp LEFT_CONTROL  &kp DEL         &kp LS(TAB)   &none      &none      &none
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON  &kp PERCENT       &none  &none  &trans                    &none           &none         &none      &none      &none
             >;
         };
 
