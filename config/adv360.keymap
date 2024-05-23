@@ -146,11 +146,11 @@
 
         Engrammer {
             bindings = <
-&kp EQUAL        &kp N1               &kp N2           &kp N3           &kp N4             &kp N5            &caps_word                                                                              &lt 3 CAPS  &kp N6     &kp N7              &kp N8            &kp N9           &kp N0                &kp AT
-&kp TAB          &kp B                &kp Y            &kp O            &kp U              &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                                                       &kp COLON   &kp SEMI   &kp L               &kp D             &kp W            &kp V                 &kp AMPS
-&kp ESCAPE       &hml LEFT_CONTROL C  &hml LEFT_ALT I  &hml LEFT_GUI E  &hml LEFT_SHIFT A  &kp COMMA         &kp LT             &kp LCTRL     &kp LCMD               &sk RCMD             &kp RCTRL  &kp GT      &kp DOT    &hmr RIGHT_SHIFT H  &hmr RIGHT_GUI T  &hmr LEFT_ALT S  &hmr RIGHT_CONTROL N  &kp EXCL
-&lsft_cpwd_cplk  &kp G                &kp X            &kp J            &kp K              &kp MINUS                                          &mt LEFT_ALT HOME      &mt RIGHT_ALT PG_UP                         &kp SLASH  &kp R               &kp M             &kp F            &kp P                 &rsft_cpwd_cplk
-&kp GRAVE        &kp LPAR             &kp LBKT         &kp RBKT         &kp RPAR                             &kp BACKSPACE      &lt 1 DELETE  &lt 3 END              &lt 3 PG_DN          &lt 2 RET  &kp SPACE              &kp LEFT            &kp DOWN          &kp UP           &kp RIGHT             &kp BACKSLASH
+&kp EQUAL        &kp N1    &kp N2    &kp N3    &kp N4    &kp N5            &kp RALT                                                                            &kp RALT         &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &kp AT
+&kp TAB          &kp B     &kp Y     &kp O     &kp U     &kp SINGLE_QUOTE  &kp LALT                                                                            &kp LALT         &kp SEMI   &kp L     &kp D     &kp W   &kp V      &kp AMPS
+&kp ESCAPE       &kp C     &kp I     &kp E     &kp A     &kp COMMA         &kp INS        &kp LCTRL     &kp LCMD               &sk RCMD             &kp RCTRL  &kp PAUSE_BREAK  &kp DOT    &kp H     &kp T     &kp S   &kp N      &kp EXCL
+&lsft_cpwd_cplk  &kp G     &kp X     &kp J     &kp K     &kp MINUS                                      &mt LEFT_ALT HOME      &mt RIGHT_ALT PG_UP                              &kp SLASH  &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
+&kp GRAVE        &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR                    &kp BACKSPACE  &lt 1 DELETE  &lt 3 END              &lt 3 PG_DN          &lt 2 RET  &kp SPACE                   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp BACKSLASH
             >;
         };
 
