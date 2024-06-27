@@ -88,14 +88,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&caps_word>, <&kp CAPS>;
+            bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPS>;
         };
 
         rsft_cpwd_cplk: rsft_cpwd_cplk {
             compatible = "zmk,behavior-tap-dance";
             label = "RSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&caps_word>, <&kp CAPS>;
+            bindings = <&kp RSHFT>, <&caps_word>, <&kp CAPS>;
         };
 
         td_lalt_altgr: td_lalt_altgr {
@@ -158,17 +158,17 @@
 &kp TAB          &kp B     &kp Y             &kp O              &kp U     &kp SINGLE_QUOTE  &kp HOME                                                                               &kp PG_UP    &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp AMPS
 &kp Z            &kp C     &kp I             &kp E              &kp A     &kp COMMA         &lt 3 END      &mt LSHFT ESC  &td_lsuper_lhyper      &td_rsuper_rhyper  &mt RSHFT TAB  &lt 3 PG_DN  &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
 &lsft_cpwd_cplk  &kp G     &kp X             &kp J              &kp K     &kp MINUS                                       &td_lalt_altgr         &td_lalt_altgr                                 &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
-&kp GRAVE        &kp LPAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RPAR                    &kp BACKSPACE  &lt 1 DELETE   &td_lctrl_lmeh         &td_rctrl_rmeh     &lt 2 RET      &kp SPACE                   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp QUESTION
+&kp GRAVE        &kp LPAR  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RPAR                    &kp BACKSPACE  &lt 1 DELETE   &td_lctrl_lmeh         &td_rctrl_rmeh     &lt 2 RET      &kp SPACE                   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp BSLH
             >;
         };
 
         FuncNumPad {
             bindings = <
-&kp F13  &kp F7     &kp F5        &kp F3            &kp F1              &kp F9         &kp F11                                                                                       &kp F12                      &kp F10     &kp F2                  &kp F4                 &kp F6                     &kp F8              &kp F14
-&none    &none      &hmt RALT N7  &kp N8            &kp N9              &none          &kp HOME                                                                                      &kp LEFT_PARENTHESIS         &kp RPAR    &kp KP_N7               &kp KP_N8              &hmt RALT KP_NUMBER_9      &kp KP_MINUS        &kp KP_DIVIDE
-&none    &kp LCTRL  &hmt LALT N4  &hmt LEFT_GUI N5  &hmt LEFT_SHIFT N5  &kp BACKSPACE  &kp END   &mt LSHFT ESC  &td_lsuper_lhyper      &td_rsuper_rhyper  &mt RSHFT TAB              &kp LT                       &kp GT      &hmt RSHFT KP_NUMBER_4  &hmt RGUI KP_NUMBER_5  &hmt LEFT_ALT KP_NUMBER_6  &hmt RCTRL KP_PLUS  &kp KP_MULTIPLY
-&none    &none      &kp N1        &kp N2            &kp N3              &kp DEL                                 &td_lalt_altgr         &td_lalt_altgr                                                             &kp DOLLAR  &kp KP_N1               &kp KP_N2              &kp KP_N3                  &kp KP_ENTER        &kp PERCENT
-&none    &none      &kp EQUAL     &kp N0            &kp DOT                            &kp BSPC  &trans         &td_lctrl_lmeh         &td_rctrl_rmeh     &mt LS(LA(LG(LCTRL))) DOT  &mt RIGHT_SHIFT KP_NUMBER_0              &kp KP_EQUAL            &kp KP_NUMBER_0        &kp KP_DOT                 &kp KP_ENTER        &kp KP_NUMLOCK
+&kp F13  &kp F7          &kp F5        &kp F3            &kp F1              &kp F9         &kp F11                                                              &kp F12               &kp F10     &kp F2                  &kp F4                 &kp F6                     &kp F8              &kp F14
+&none    &none           &hmt RALT N7  &kp N8            &kp N9              &none          &kp HOME                                                             &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7               &kp KP_N8              &hmt RALT KP_NUMBER_9      &kp KP_MINUS        &kp KP_DIVIDE
+&none    &kp LCTRL       &hmt LALT N4  &hmt LEFT_GUI N5  &hmt LEFT_SHIFT N5  &kp BACKSPACE  &kp END   &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &hmt RSHFT KP_NUMBER_4  &hmt RGUI KP_NUMBER_5  &hmt LEFT_ALT KP_NUMBER_6  &hmt RCTRL KP_PLUS  &kp KP_MULTIPLY
+&none    &kp LEFT_SHIFT  &kp N1        &kp N2            &kp N3              &kp DEL                          &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1               &kp KP_N2              &kp KP_N3                  &kp KP_ENTER        &kp PERCENT
+&none    &none           &kp EQUAL     &kp N0            &kp DOT                            &trans    &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL            &kp KP_NUMBER_0        &kp KP_DOT                 &kp KP_ENTER        &kp KP_NUMLOCK
             >;
         };
 
@@ -199,16 +199,6 @@
 &kp N8  &kp LCTRL  &kp A   &kp S   &kp D   &kp F   &kp G      &kp ESC    &kp LGUI               &kp RGUI       &kp GRAVE   &kp END    &kp H   &kp J     &kp K      &kp L    &kp SEMI   &kp RCTRL
 &kp N9  &kp LSHFT  &kp Z   &kp X   &kp C   &kp V                         &kp LEFT_BRACKET       &kp PG_UP                             &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
 &kp N0  &kp LALT   &kp J   &kp M   &kp B           &kp SPACE  &kp ENTER  &kp RIGHT_BRACKET      &kp PAGE_DOWN  &kp DELETE  &kp BSPC           &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &kp RALT
-            >;
-        };
-
-        EngramShifted {
-            bindings = <
-&kp PLUS       &kp LS(PIPE)  &kp EQUAL  &kp LS(TILDE)  &kp LS(PLUS)  &kp LS(LT)     &kp INS                                       &kp PAUSE_BREAK  &kp LS(GT)                &kp LS(CARET)  &kp LS(AMPS)  &kp LS(PRCNT)  &kp LS(DLLR)  &kp PRCNT
-&kp LS(TAB)    &kp LS(B)     &kp LS(Y)  &kp LS(O)      &kp LS(U)     &kp DQT        &kp HOME                                      &kp PG_UP        &kp COLON                 &kp LS(L)      &kp LS(D)     &kp LS(W)      &kp LS(V)     &kp PIPE
-&kp LS(Z)      &kp LS(C)     &kp LS(I)  &kp LS(E)      &kp LS(A)     &kp LT         &kp END   &trans  &trans      &trans  &trans  &kp PG_DN        &kp GT                    &kp LS(H)      &kp LS(T)     &kp LS(S)      &kp LS(N)     &kp LS(Q)
-&trans         &kp LS(G)     &kp LS(X)  &kp LS(J)      &kp LS(K)     &kp LS(UNDER)                    &trans      &trans                           &kp LS(NON_US_BACKSLASH)  &kp LS(R)      &kp LS(M)     &kp LS(F)      &kp LS(P)     &trans
-&kp LS(TILDE)  &kp LT        &kp LBRC   &kp RBRC       &kp GT                       &trans    &trans  &trans      &trans  &trans  &trans                                     &trans         &trans        &trans         &trans        &kp EXCL
             >;
         };
     };
