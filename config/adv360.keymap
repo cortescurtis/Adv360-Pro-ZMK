@@ -163,11 +163,11 @@
 
         FuncNumPad {
             bindings = <
-&kp F13        &kp F7          &kp F5        &kp F3            &kp F1              &kp F9         &kp F11                                                              &kp F12               &kp F10     &kp F2                  &kp F4                 &kp F6                     &kp F8              &kp F14
-&kp RIGHT_ALT  &kp LALT        &hmt RALT N7  &kp N8            &kp N9              &none          &kp HOME                                                             &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7               &kp KP_N8              &hmt RALT KP_NUMBER_9      &kp KP_MINUS        &kp KP_DIVIDE
-&none          &kp LCTRL       &hmt LALT N4  &hmt LEFT_GUI N5  &hmt LEFT_SHIFT N5  &kp BACKSPACE  &kp END   &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &hmt RSHFT KP_NUMBER_4  &hmt RGUI KP_NUMBER_5  &hmt LEFT_ALT KP_NUMBER_6  &hmt RCTRL KP_PLUS  &kp KP_MULTIPLY
-&none          &kp LEFT_SHIFT  &kp N1        &kp N2            &kp N3              &kp DEL                          &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1               &kp KP_N2              &kp KP_N3                  &kp KP_ENTER        &kp PERCENT
-&none          &kp LGUI        &kp EQUAL     &kp N0            &kp DOT                            &trans    &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL            &kp KP_NUMBER_0        &kp KP_DOT                 &kp KP_ENTER        &kp KP_NUMLOCK
+&kp F13        &kp F7          &kp F5        &kp F3            &kp F1              &kp F9         &kp F11                                                             &kp F12               &kp F10     &kp F2                  &kp F4                 &kp F6                     &kp F8              &kp F14
+&kp RIGHT_ALT  &kp LALT        &hmt RALT N7  &kp N8            &kp N9              &none          &none                                                               &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7               &kp KP_N8              &hmt RALT KP_NUMBER_9      &kp KP_MINUS        &kp KP_DIVIDE
+&none          &kp LCTRL       &hmt LALT N4  &hmt LEFT_GUI N5  &hmt LEFT_SHIFT N5  &kp BACKSPACE  &none    &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &hmt RSHFT KP_NUMBER_4  &hmt RGUI KP_NUMBER_5  &hmt LEFT_ALT KP_NUMBER_6  &hmt RCTRL KP_PLUS  &kp KP_MULTIPLY
+&none          &kp LEFT_SHIFT  &kp N1        &kp N2            &kp N3              &kp DEL                         &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1               &kp KP_N2              &kp KP_N3                  &kp KP_ENTER        &kp PERCENT
+&none          &kp LGUI        &kp EQUAL     &kp N0            &kp DOT                            &trans   &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL            &kp KP_NUMBER_0        &kp KP_DOT                 &kp KP_ENTER        &kp KP_NUMLOCK
             >;
         };
 
