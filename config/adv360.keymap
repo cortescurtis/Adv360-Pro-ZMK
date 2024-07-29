@@ -153,8 +153,8 @@
 
         Engrammer {
             bindings = <
-&kp EQUAL        &kp N7    &kp N5     &kp N3     &kp N1   &kp N9            &kp LT                                                                                      &kp GT               &kp N0         &kp N2    &kp N4    &kp N6  &kp N8     &kp EXCL
-&kp TAB          &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp LPAR                                                                                    &kp RPAR             &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp AMPS
+&kp EQUAL        &kp N7    &kp N5     &kp N3     &kp N1   &kp N9            &kp LT                                                                                      &kp GT               &kp N0         &kp N2    &kp N4    &kp N6  &kp N8     &kp AMPS
+&kp AT           &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp LPAR                                                                                    &kp RPAR             &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp EXCL
 &kp Z            &kp C     &kp I      &kp E      &kp A    &kp COMMA         &lt 3 LEFT_BRACKET  &mt LSHFT ESC  &td_lctrl_lmeh         &td_rctrl_rmeh     &mt RSHFT TAB  &lt 3 RIGHT_BRACKET  &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
 &lsft_cpwd_cplk  &kp G     &kp X      &kp J      &kp K    &kp MINUS                                            &td_lalt_altgr         &td_lalt_altgr                                         &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
 &kp GRAVE        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END                    &kp BACKSPACE       &lt 1 DELETE   &td_lsuper_lhyper      &td_rsuper_rhyper  &lt 2 RET      &kp SPACE                           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp BSLH
