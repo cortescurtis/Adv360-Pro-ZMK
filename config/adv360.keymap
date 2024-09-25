@@ -154,8 +154,8 @@
         Engrammer {
             bindings = <
 &kp LEFT_BRACKET  &kp N7    &kp N5     &kp N3     &kp N1   &kp N9            &kp LPAR                                                                               &kp RPAR       &kp N0         &kp N2    &kp N4    &kp N6  &kp N8     &kp RIGHT_BRACKET
-&kp AT            &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp EQUAL                                                                              &kp AMPERSAND  &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp Z
-&kp HASH          &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp PLUS       &mt LSHFT ESC  &td_lctrl_lmeh         &td_rctrl_rmeh     &mt RSHFT TAB  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
+&kp AT            &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp PLUS                                                                               &kp AMPERSAND  &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp Z
+&kp ESCAPE        &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp EQUAL      &mt LSHFT ESC  &td_lctrl_lmeh         &td_rctrl_rmeh     &mt RSHFT TAB  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
 &lsft_cpwd_cplk   &kp G     &kp X      &kp J      &kp K    &kp MINUS                                       &td_lalt_altgr         &td_lalt_altgr                                   &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
 &lt 3 GRAVE       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END                    &kp BACKSPACE  &lt 1 DELETE   &td_lsuper_lhyper      &td_rsuper_rhyper  &lt 2 RET      &kp SPACE                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &lt 3 BSLH
             >;
@@ -163,31 +163,31 @@
 
         FuncNumPad {
             bindings = <
-&kp F13        &kp F7          &kp F5     &kp F3  &kp F1   &kp F9         &kp F11                                                             &kp F12               &kp F10     &kp F2           &kp F4           &kp F6           &kp F8        &kp F14
-&kp RIGHT_ALT  &kp LALT        &kp N7     &kp N8  &kp N9   &none          &none                                                               &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-&none          &kp LCTRL       &kp N4     &kp N5  &kp N6   &kp BACKSPACE  &none    &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
-&none          &kp LEFT_SHIFT  &kp N1     &kp N2  &kp N3   &kp DEL                         &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
-&none          &kp LGUI        &kp EQUAL  &kp N0  &kp DOT                 &trans   &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL     &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &kp KP_NUMLOCK
+&kp F13  &kp F7  &kp F5     &kp F3         &kp F1         &kp F9          &kp F11                                                                           &kp F12               &kp F10     &kp F2           &kp F4           &kp F6           &kp F8        &kp F14
+&none    &none   &none      &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_GUI    &kp LA(LC(LG(LSHFT)))                                                             &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+&none    &none   &kp SPACE  &kp TAB        &kp BACKSPACE  &kp LEFT_SHIFT  &kp LA(LC(LSHFT))      &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
+&none    &none   &kp ENTER  &kp LS(TAB)    &kp DEL        &kp LCTRL                                      &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
+&none    &none   &none      &none          &none                          &trans                 &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL     &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &kp KP_NUMLOCK
             >;
         };
 
         Symbols {
             bindings = <
-&kp PLUS         &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &none                                                     &none   &none             &none           &none         &kp RALT   &none      &none
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &none                                                     &trans  &kp LGUI          &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LALT   &kp LCTRL  &none
-&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &none      &kp BACKSLASH  &kp ASTERISK      &none  &none  &trans  &kp LEFT_SHIFT    &kp BACKSPACE   &kp TAB       &kp SPACE  &kp RET    &none
-&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                               &kp PERIOD        &none                 &kp LEFT_CONTROL  &kp DEL         &kp LS(TAB)   &none      &none      &none
-&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON  &kp SEMICOLON  &kp PERCENT       &none  &none  &trans                    &none           &none         &none      &none      &none
+&kp PERCENT      &kp GRAVE       &kp LPAR          &kp RPAR           &kp SEMI          &kp COMMA     &kp COLON                                                     &none                  &none             &none          &none          &none      &none  &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SQT           &kp DOUBLE_QUOTES  &kp RIGHT_BRACE   &kp QUESTION  &kp DOT                                                       &kp LG(LC(LA(LSHFT)))  &kp LGUI          &kp LEFT_ALT   &kp RIGHT_ALT  &none      &none  &none
+&kp HASH         &kp CARET       &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR        &kp ASTERISK  &kp BACKSLASH  &kp BACKSLASH  &kp ASTERISK      &none  &none  &kp LC(LA(LSHFT))      &kp LEFT_SHIFT    &kp BACKSPACE  &kp TAB        &kp SPACE  &none  &none
+&kp AT_SIGN      &kp LESS_THAN   &kp PIPE          &kp MINUS          &kp GREATER_THAN  &kp SLASH                                   &kp PERIOD        &none                                &kp LEFT_CONTROL  &kp DEL        &kp LS(TAB)    &kp ENTER  &none  &none
+&kp TILDE        &kp AMPERSAND   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS                        &kp COLON      &kp SEMICOLON  &kp PERCENT       &none  &none  &trans                                   &none          &none          &none      &none  &none
             >;
         };
 
         System {
             bindings = <
-&none  &none  &none       &none       &none       &none  &none                                                                         &trans        &none  &none         &none       &none         &none  &none
-&none  &none  &bl BL_TOG  &bl BL_DEC  &bl BL_INC  &none  &bootloader                                                                   &bootloader   &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none  &none
-&none  &none  &none       &none       &none       &none  &none         &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_CLR_ALL  &bt BT_CLR    &none         &none  &kp C_PREV    &kp C_PLAY  &kp C_NEXT    &none  &none
-&none  &none  &none       &none       &none       &none                              &none               &none                                       &none  &none         &none       &none         &none  &none
-&none  &none  &none       &none       &none              &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 4        &none           &bt BT_SEL 3  &bt BT_SEL 1         &none         &none       &none         &none  &none
+&none  &none  &none       &none       &none       &none  &none                                                                         &trans        &none  &none       &none              &none         &none  &none
+&none  &none  &bl BL_TOG  &bl BL_DEC  &bl BL_INC  &none  &bootloader                                                                   &bootloader   &none  &none       &none              &none         &none  &none
+&none  &none  &none       &none       &none       &none  &none         &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_CLR_ALL  &bt BT_CLR    &none         &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &none  &none
+&none  &none  &none       &none       &none       &none                              &none               &none                                       &none  &kp C_PLAY  &kp C_PREV         &kp C_NEXT    &none  &none
+&none  &none  &none       &none       &none              &bt BT_SEL 0  &bt BT_SEL 2  &bt BT_SEL 4        &none           &bt BT_SEL 3  &bt BT_SEL 1         &none       &none              &none         &none  &none
             >;
         };
 
