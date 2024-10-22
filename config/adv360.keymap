@@ -132,18 +132,13 @@
             bindings = <&kp RIGHT_GUI>, <&kp RA(RC(RG(RIGHT_SHIFT)))>;
         };
 
-        td_tml_meh: td_tml_meh {
+        td_tml_alt: td_tml_alt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_TML_MEH";
+            label = "TD_TML_ALT";
             #binding-cells = <0>;
-            bindings = <&tml LCTRL TAB>, <&kp LA(LC(LSHFT))>;
-        };
+            bindings = <&tml LALT TAB>, <&kp RALT>;
 
-        td_tmr_meh: td_tmr_meh {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_TMR_MEH";
-            #binding-cells = <0>;
-            bindings = <&tmr RCTRL TAB>, <&kp RA(RC(RSHFT))>;
+            tapping-term-ms = <125>;
         };
     };
 
@@ -169,19 +164,19 @@
             bindings = <
 &kp LEFT_BRACKET  &kp N7    &kp N5     &kp N3     &kp N1   &kp N9            &kp LPAR                                                                               &kp RPAR       &kp N0         &kp N2    &kp N4    &kp N6  &kp N8     &kp RIGHT_BRACKET
 &kp AT            &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp PLUS                                                                               &kp AMPERSAND  &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp Z
-&kp ESCAPE        &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp EQUAL      &mt LSHFT ESC  &td_tml_meh            &td_tmr_meh        &mt RSHFT ESC  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
-&lsft_cpwd_cplk   &kp G     &kp X      &kp J      &kp K    &kp MINUS                                       &td_lalt_altgr         &td_lalt_altgr                                   &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
+&kp HASH          &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp EQUAL      &mt LSHFT ESC  &td_lctrl_lmeh         &td_rctrl_rmeh     &mt RSHFT ESC  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
+&lsft_cpwd_cplk   &kp G     &kp X      &kp J      &kp K    &kp MINUS                                       &td_tml_alt            &td_tml_alt                                      &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
 &lt 3 GRAVE       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END                    &kp BACKSPACE  &lt 1 DELETE   &td_lsuper_lhyper      &td_rsuper_rhyper  &lt 2 RET      &kp SPACE                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &lt 3 BSLH
             >;
         };
 
         FuncNumPad {
             bindings = <
-&kp F13  &kp F7  &kp F5     &kp F3         &kp F1         &kp F9          &kp F11                                                                           &kp F12               &kp F10     &kp F2           &kp F4           &kp F6           &kp F8        &kp F14
-&none    &none   &none      &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_GUI    &kp LA(LC(LG(LSHFT)))                                                             &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-&none    &none   &kp SPACE  &kp TAB        &kp BACKSPACE  &kp LEFT_SHIFT  &kp LA(LC(LSHFT))      &trans  &td_lsuper_lhyper      &td_rsuper_rhyper  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
-&none    &none   &kp ENTER  &kp LS(TAB)    &kp DEL        &kp LCTRL                                      &td_lalt_altgr         &td_lalt_altgr                                    &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
-&none    &none   &none      &none          &none                          &trans                 &trans  &td_lctrl_lmeh         &td_rctrl_rmeh     &kp DOT  &kp KP_N0                         &kp KP_EQUAL     &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &kp KP_NUMLOCK
+&kp F13  &kp F7  &kp F5     &kp F3         &kp F1         &kp F9          &kp F11                                                     &kp F12               &kp F10     &kp F2           &kp F4           &kp F6           &kp F8        &kp F14
+&none    &none   &none      &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_GUI    &kp LA(LC(LG(LSHFT)))                                       &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+&none    &none   &kp SPACE  &kp TAB        &kp BACKSPACE  &kp LEFT_SHIFT  &kp LA(LC(LSHFT))      &trans  &trans      &trans  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
+&none    &none   &kp ENTER  &kp LS(TAB)    &kp DEL        &kp LCTRL                                      &trans      &trans                                 &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
+&none    &none   &none      &none          &none                          &trans                 &trans  &trans      &trans  &kp DOT  &kp KP_N0                         &kp KP_EQUAL     &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &kp KP_NUMLOCK
             >;
         };
 
