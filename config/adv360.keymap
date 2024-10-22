@@ -87,14 +87,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&caps_word>, <&kp CAPS>;
+            bindings = <&tml LSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
+
+            tapping-term-ms = <125>;
         };
 
         rsft_cpwd_cplk: rsft_cpwd_cplk {
             compatible = "zmk,behavior-tap-dance";
             label = "RSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&caps_word>, <&kp CAPS>;
+            bindings = <&tmr RSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
+
+            tapping-term-ms = <125>;
         };
 
         td_lalt_altgr: td_lalt_altgr {
