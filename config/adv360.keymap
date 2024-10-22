@@ -88,8 +88,6 @@
             label = "LSFT_CPWD_CPLK";
             #binding-cells = <0>;
             bindings = <&tml LSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
-
-            tapping-term-ms = <125>;
         };
 
         rsft_cpwd_cplk: rsft_cpwd_cplk {
@@ -143,6 +141,13 @@
             bindings = <&tml LALT TAB>, <&kp RALT>;
 
             tapping-term-ms = <125>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&tmr RSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
         };
     };
 
