@@ -131,6 +131,20 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_GUI>, <&kp RA(RC(RG(RIGHT_SHIFT)))>;
         };
+
+        td_tml_meh: td_tml_meh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TML_MEH";
+            #binding-cells = <0>;
+            bindings = <&tml LCTRL TAB>, <&kp LA(LC(LSHFT))>;
+        };
+
+        td_tmr_meh: td_tmr_meh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TMR_MEH";
+            #binding-cells = <0>;
+            bindings = <&tmr RCTRL TAB>, <&kp RA(RC(RSHFT))>;
+        };
     };
 
     combos {
@@ -155,7 +169,7 @@
             bindings = <
 &kp LEFT_BRACKET  &kp N7    &kp N5     &kp N3     &kp N1   &kp N9            &kp LPAR                                                                               &kp RPAR       &kp N0         &kp N2    &kp N4    &kp N6  &kp N8     &kp RIGHT_BRACKET
 &kp AT            &kp B     &kp Y      &kp O      &kp U    &kp SINGLE_QUOTE  &kp PLUS                                                                               &kp AMPERSAND  &kp SEMICOLON  &kp L     &kp D     &kp W   &kp V      &kp Z
-&kp ESCAPE        &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp EQUAL      &mt LSHFT ESC  &td_lctrl_lmeh         &td_rctrl_rmeh     &mt RSHFT TAB  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
+&kp ESCAPE        &kp C     &kp I      &kp E      &kp A    &kp COMMA         &kp EQUAL      &mt LSHFT ESC  &td_tml_meh            &td_tmr_meh        &mt RSHFT ESC  &kp EXCL       &kp DOT        &kp H     &kp T     &kp S   &kp N      &kp Q
 &lsft_cpwd_cplk   &kp G     &kp X      &kp J      &kp K    &kp MINUS                                       &td_lalt_altgr         &td_lalt_altgr                                   &kp SLASH      &kp R     &kp M     &kp F   &kp P      &rsft_cpwd_cplk
 &lt 3 GRAVE       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END                    &kp BACKSPACE  &lt 1 DELETE   &td_lsuper_lhyper      &td_rsuper_rhyper  &lt 2 RET      &kp SPACE                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &lt 3 BSLH
             >;
