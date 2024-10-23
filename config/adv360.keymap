@@ -166,6 +166,11 @@
             bindings = <&tog 4>;
             key-positions = <20 21>;
         };
+
+        double_shift {
+            bindings = <&kp RS(LEFT_SHIFT)>;
+            key-positions = <35 38>;
+        };
     };
 
     keymap {
