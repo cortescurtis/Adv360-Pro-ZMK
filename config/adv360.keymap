@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&tml LSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
+            bindings = <&tml LSHFT LSHIFT>, <&caps_word>, <&kp CAPS>;
 
             tapping-term-ms = <150>;
         };
@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RSFT_CPWD_CPLK";
             #binding-cells = <0>;
-            bindings = <&tmr RSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
+            bindings = <&tmr RSHFT RSHFT>, <&caps_word>, <&kp CAPS>;
 
             tapping-term-ms = <125>;
         };
@@ -189,9 +189,9 @@
         FuncNumPad {
             bindings = <
 &kp F13  &kp F7  &kp F5     &kp F3         &kp F1         &kp F9          &kp F11                                                     &kp F12               &kp F10     &kp F2           &kp F4           &kp F6           &kp F8        &kp F14
-&none    &none   &none      &kp RIGHT_ALT  &kp LEFT_ALT   &kp LEFT_GUI    &kp LA(LC(LG(LSHFT)))                                       &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-&none    &none   &kp SPACE  &kp TAB        &kp BACKSPACE  &kp LEFT_SHIFT  &kp LA(LC(LSHFT))      &trans  &trans      &trans  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
-&none    &none   &kp ENTER  &kp LS(TAB)    &kp DEL        &kp LCTRL                                      &trans      &trans                                 &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
+&none    &none   &none      &sk RIGHT_ALT  &sk LEFT_ALT   &sk LEFT_GUI    &sk LA(LC(LG(LSHFT)))                                       &kp LEFT_PARENTHESIS  &kp RPAR    &kp KP_N7        &kp KP_N8        &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+&none    &none   &kp SPACE  &kp TAB        &kp BACKSPACE  &sk LEFT_SHIFT  &sk LA(LC(LSHFT))      &trans  &trans      &trans  &trans   &kp LT                &kp GT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MULTIPLY
+&none    &none   &kp ENTER  &kp LS(TAB)    &kp DEL        &sk LCTRL                                      &trans      &trans                                 &kp DOLLAR  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp PERCENT
 &none    &none   &none      &none          &none                          &trans                 &trans  &trans      &trans  &kp DOT  &kp KP_N0                         &kp KP_EQUAL     &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER  &kp KP_NUMLOCK
             >;
         };
