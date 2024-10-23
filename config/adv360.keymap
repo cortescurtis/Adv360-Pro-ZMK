@@ -88,6 +88,8 @@
             label = "LSFT_CPWD_CPLK";
             #binding-cells = <0>;
             bindings = <&tml LSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
+
+            tapping-term-ms = <150>;
         };
 
         rsft_cpwd_cplk: rsft_cpwd_cplk {
