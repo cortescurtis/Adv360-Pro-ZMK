@@ -176,7 +176,7 @@
         };
 
         comb-q {
-            bindings = <&kp RS(Q)>;
+            bindings = <&kp Q>;
             key-positions = <24 25>;
         };
     };
