@@ -169,6 +169,16 @@
             bindings = <&kp RS(LEFT_SHIFT)>;
             key-positions = <35 38>;
         };
+
+        comb-z {
+            bindings = <&kp Z>;
+            key-positions = <16 17>;
+        };
+
+        comb-q {
+            bindings = <&kp RS(Q)>;
+            key-positions = <24 25>;
+        };
     };
 
     keymap {
