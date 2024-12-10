@@ -179,6 +179,61 @@
             bindings = <&kp Q>;
             key-positions = <24 25>;
         };
+
+        l_esc {
+            bindings = <&kp ESC>;
+            key-positions = <32 29>;
+        };
+
+        r_esc {
+            bindings = <&kp ESC>;
+            key-positions = <41 44>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <49 48>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <56 57>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <19 33>;
+        };
+
+        amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <22 40>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <51 33>;
+        };
+
+        bang {
+            bindings = <&kp EXCL>;
+            key-positions = <40 54>;
+        };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <32 41>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <69 70>;
+        };
+
+        tab_shift {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <65 66>;
+        };
     };
 
     keymap {
