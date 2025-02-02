@@ -157,11 +157,17 @@
         comb-z {
             bindings = <&kp Z>;
             key-positions = <24 25>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         comb-q {
             bindings = <&kp Q>;
             key-positions = <16 17>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         l_esc {
@@ -172,31 +178,49 @@
         at {
             bindings = <&kp AT>;
             key-positions = <49 48>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <56 57>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <47 48>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         amp {
             bindings = <&kp AMPERSAND>;
             key-positions = <22 23>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <51 50>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         bang {
             bindings = <&kp EXCL>;
             key-positions = <54 55>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         capsword {
@@ -207,71 +231,113 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <69 70>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         tab_shift {
             bindings = <&kp LS(TAB)>;
             key-positions = <65 66>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         lbrk {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 16>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         rbrk {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <25 26>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <17 18>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         rparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <23 24>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <18 19>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         aster {
             bindings = <&kp ASTERISK>;
             key-positions = <49 50>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         perc {
             bindings = <&kp PERCENT>;
             key-positions = <56 55>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         bslsh {
             bindings = <&kp BACKSLASH>;
             key-positions = <57 58>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         lbrkt_alternate {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 32>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         lbrc_alternate {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <50 31>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         rbrkt_alternate {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <41 24>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         rbrc_alternate {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <55 42>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         sl_num {
