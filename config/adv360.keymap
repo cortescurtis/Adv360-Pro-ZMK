@@ -156,7 +156,7 @@
 
         comb-z {
             bindings = <&kp Z>;
-            key-positions = <16 17 24 25>;
+            key-positions = <24 25>;
         };
 
         comb-q {
