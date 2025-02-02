@@ -343,41 +343,57 @@
         sl_num {
             bindings = <&sl 1>;
             key-positions = <65 32>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sl_numpad {
             bindings = <&sl 2>;
             key-positions = <31 65>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sl_function {
             bindings = <&sl 3>;
             key-positions = <65 30>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sll_system {
             bindings = <&sl 7>;
             key-positions = <65 29>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sl_symbol {
             bindings = <&sl 4>;
             key-positions = <70 41>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sl_symplus {
             bindings = <&sl 5>;
             key-positions = <42 70>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         sl_nav {
             bindings = <&sl 6>;
             key-positions = <70 43>;
+            slow-release;
+            timeout-ms = <25>;
         };
 
         slr_system {
             bindings = <&sl 7>;
             key-positions = <70 44>;
+            slow-release;
+            timeout-ms = <25>;
         };
     };
 
