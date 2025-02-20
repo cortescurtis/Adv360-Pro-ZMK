@@ -149,6 +149,19 @@
             #binding-cells = <0>;
             bindings = <&tmr RSHFT ESCAPE>, <&caps_word>, <&kp CAPS>;
         };
+
+        tm: tm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TM";
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <52 53 65 66 67 68 69 70 35 36 37 38 70 71 7 8 9 10 11 12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64 0 1 2 3 4 5 6>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <40>;
+        };
     };
 
     combos {
@@ -402,11 +415,11 @@
 
         Engrammer {
             bindings = <
-&kp ASTERISK         &kp N7           &kp N5               &kp N3               &kp N1             &kp N9                             &kp LPAR                                                                                &kp RPAR                           &kp N0                              &kp N2              &kp N4                &kp N6        &kp N8            &kp PERCENT
-&kp AT               &kp B            &kp Y                &kp O                &kp U              &kp SINGLE_QUOTE                   &kp PLUS                                                                                &kp AMPERSAND                      &kp SEMICOLON                       &kp L               &kp D                 &kp W         &kp V             &kp HASH
-&hml RIGHT_ALT LBKT  &hml LEFT_ALT C  &hml LEFT_CONTROL I  &hml LEFT_COMMAND E  &hml LEFT_SHIFT A  &hml LC(LA(LEFT_SHIFT)) COMMA      &hml LA(LC(LG(LEFT_SHIFT))) EQUAL  &kp ESC  &kp LEFT_GUI      &kp RIGHT_GUI  &kp ESC    &hmr LA(RC(RG(RIGHT_SHIFT))) EXCL  &hmr RC(LA(RIGHT_SHIFT)) DOT        &hmr RIGHT_SHIFT H  &hmr RIGHT_COMMAND T  &hmr RCTRL S  &hmr RIGHT_ALT N  &hmr LALT RBKT
-&lsft_cpwd_cplk      &kp G            &kp X                &kp J                &kp K              &hml LA(LC(LG(LEFT_SHIFT))) MINUS                                              &caps_word        &caps_word                                                   &hmr RA(RC(RG(RIGHT_SHIFT))) SLASH  &kp R               &kp M                 &kp F         &kp P             &rsft_cpwd_cplk
-&kp GRAVE            &kp HOME         &kp PG_DN            &kp PG_UP            &kp END                                               &kp BACKSPACE                      &kp DEL  &kp LS(TAB)       &kp TAB        &kp ENTER  &kp SPACE                                                              &kp LEFT            &kp DOWN              &kp UP        &kp RIGHT         &kp BACKSLASH
+&kp EQUAL       &kp N7           &kp N5               &kp N3               &kp N1             &kp N9            &sl 1                                                                                                        &sl 6      &kp N0         &kp N2              &kp N4                &kp N6        &kp N8            &kp PERCENT
+&kp TAB         &kp B            &kp Y                &kp O                &kp U              &kp SINGLE_QUOTE  &sl 3                                                                                                        &sl 5      &kp SEMICOLON  &kp L               &kp D                 &kp W         &kp V             &kp Z
+&tm LCTRL ESC   &hml LEFT_ALT C  &hml LEFT_CONTROL I  &hml LEFT_COMMAND E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2          &tm LCTRL LPAR  &tm LGUI LT                     &tm RGUI GT                   &tm RCTRL RPAR  &sl 4      &kp DOT        &hmr RIGHT_SHIFT H  &hmr RIGHT_COMMAND T  &hmr RCTRL S  &hmr RIGHT_ALT N  &kp Q
+&kp LEFT_SHIFT  &kp G            &kp X                &kp J                &kp K              &kp MINUS                                        &tm LEFT_ALT HOME               &tm RALT PG_UP                                           &kp FSLH       &kp R               &kp M                 &kp F         &kp P             &kp RSHFT
+&lt 7 AT_SIGN   &kp GRAVE        &caps_word           &kp LEFT             &kp RIGHT                            &kp BACKSPACE  &kp DEL         &tm LA(LC(LG(LSHIFT))) END      &tm LA(LC(LG(LSHIFT))) PG_DN  &kp ENTER       &kp SPACE                 &kp UP              &kp DOWN              &kp LBKT      &kp RBKT          &lt 7 BSLH
             >;
         };
 
