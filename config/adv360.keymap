@@ -361,14 +361,14 @@
         };
 
         sl_numpad {
-            bindings = <&sl 2>;
+            bindings = <&sl 3>;
             key-positions = <31 65>;
             slow-release;
             timeout-ms = <25>;
         };
 
         sl_function {
-            bindings = <&sl 3>;
+            bindings = <&sl 2>;
             key-positions = <65 30>;
             slow-release;
             timeout-ms = <25>;
@@ -416,8 +416,8 @@
         Engrammer {
             bindings = <
 &kp EQUAL       &kp N7           &kp N5               &kp N3               &kp N1             &kp N9            &sl 1                                                                                                        &sl 6      &kp N0         &kp N2              &kp N4                &kp N6        &kp N8            &kp PERCENT
-&kp TAB         &kp B            &kp Y                &kp O                &kp U              &kp SINGLE_QUOTE  &sl 3                                                                                                        &sl 5      &kp SEMICOLON  &kp L               &kp D                 &kp W         &kp V             &kp Z
-&tm LCTRL ESC   &hml LEFT_ALT C  &hml LEFT_CONTROL I  &hml LEFT_COMMAND E  &hml LEFT_SHIFT A  &kp COMMA         &sl 2          &tm LCTRL LPAR  &tm LGUI LT                     &tm RGUI GT                   &tm RCTRL RPAR  &sl 4      &kp DOT        &hmr RIGHT_SHIFT H  &hmr RIGHT_COMMAND T  &hmr RCTRL S  &hmr RIGHT_ALT N  &kp Q
+&kp TAB         &kp B            &kp Y                &kp O                &kp U              &kp SINGLE_QUOTE  &sl 2                                                                                                        &sl 5      &kp SEMICOLON  &kp L               &kp D                 &kp W         &kp V             &kp Z
+&tm LCTRL ESC   &hml LEFT_ALT C  &hml LEFT_CONTROL I  &hml LEFT_COMMAND E  &hml LEFT_SHIFT A  &kp COMMA         &sl 3          &tm LCTRL LPAR  &tm LGUI LT                     &tm RGUI GT                   &tm RCTRL RPAR  &sl 4      &kp DOT        &hmr RIGHT_SHIFT H  &hmr RIGHT_COMMAND T  &hmr RCTRL S  &hmr RIGHT_ALT N  &kp Q
 &kp LEFT_SHIFT  &kp G            &kp X                &kp J                &kp K              &kp MINUS                                        &tm LEFT_ALT HOME               &tm RALT PG_UP                                           &kp FSLH       &kp R               &kp M                 &kp F         &kp P             &kp RSHFT
 &lt 7 AT_SIGN   &kp GRAVE        &caps_word           &kp LEFT             &kp RIGHT                            &kp BACKSPACE  &kp DEL         &tm LA(LC(LG(LSHIFT))) END      &tm LA(LC(LG(LSHIFT))) PG_DN  &kp ENTER       &kp SPACE                 &kp UP              &kp DOWN              &kp LBKT      &kp RBKT          &lt 7 BSLH
             >;
@@ -433,23 +433,23 @@
             >;
         };
 
-        NumPad {
-            bindings = <
-&none          &none         &none             &none             &none           &none                   &none                                                                           &none      &none         &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none          &none         &none             &tog 2            &kp KP_NUMLOCK  &none                   &none                                                                           &none      &kp KP_PLUS   &kp KP_N7        &kp KP_N8         &kp KP_NUMBER_9       &kp KP_MULTIPLY        &none
-&sk RIGHT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &sk LA(LC(LEFT_SHIFT))  &sk LA(LC(LG(LSHFT)))  &trans  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp KP_DOT    &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6       &kp KP_COMMA           &none
-&kp LS(TAB)    &kp TAB       &kp ENTER         &kp SPACE         &kp BACKSPACE   &kp DEL                                                &trans      &kp HASH                                        &kp KP_MINUS  &kp KP_N1        &kp KP_N2         &kp KP_N3             &kp KP_DIVIDE          &none
-&none          &none         &none             &none             &none                                   &trans                 &trans  &trans      &kp PERCENT       &kp KP_EQUAL       &kp KP_N0                &none            &none             &none                 &none                  &none
-            >;
-        };
-
         Function {
             bindings = <
 &none        &none     &none      &none      &none      &none              &none                                                      &none   &none  &none   &none   &none   &none    &none
-&none        &none     &none      &tog 3     &none      &none              &none                                                      &none   &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none        &none     &none      &tog 2     &none      &none              &none                                                      &none   &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
 &sk RALT     &sk LALT  &sk LCTRL  &sk LGUI   &sk LSHFT  &sk LA(LC(LSHFT))  &sk LA(LC(LG(LSHFT)))  &trans  &trans      &trans  &trans  &none   &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
 &kp LS(TAB)  &kp TAB   &kp RET    &kp SPACE  &kp BSPC   &kp DEL                                           &trans      &trans                  &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
 &none        &none     &none      &none      &none                         &trans                 &trans  &trans      &trans  &trans  &trans         &none   &none   &none   &none    &none
+            >;
+        };
+
+        NumPad {
+            bindings = <
+&none          &none         &none             &none             &none           &none                   &none                                                                           &none      &none         &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none          &none         &none             &tog 3            &kp KP_NUMLOCK  &none                   &none                                                                           &none      &kp KP_PLUS   &kp KP_N7        &kp KP_N8         &kp KP_NUMBER_9       &kp KP_MULTIPLY        &none
+&sk RIGHT_ALT  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &sk LA(LC(LEFT_SHIFT))  &sk LA(LC(LG(LSHFT)))  &trans  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp KP_DOT    &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6       &kp KP_COMMA           &none
+&kp LS(TAB)    &kp TAB       &kp ENTER         &kp SPACE         &kp BACKSPACE   &kp DEL                                                &trans      &kp HASH                                        &kp KP_MINUS  &kp KP_N1        &kp KP_N2         &kp KP_N3             &kp KP_DIVIDE          &none
+&none          &none         &none             &none             &none                                   &trans                 &trans  &trans      &kp PERCENT       &kp KP_EQUAL       &kp KP_N0                &none            &none             &none                 &none                  &none
             >;
         };
 
