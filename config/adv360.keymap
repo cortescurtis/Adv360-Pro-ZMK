@@ -415,11 +415,11 @@
 
         Engrammer {
             bindings = <
-&kp EQUAL       &kp N7           &kp N5               &kp N3               &kp N1             &kp N9            &sl 1                                                                                                            &sl 6      &kp N0         &kp N2              &kp N4                &kp N6        &kp N8            &kp BSLH
-&kp TAB         &kp B            &kp Y                &kp O                &kp U              &kp SINGLE_QUOTE  &sl 2                                                                                                            &sl 5      &kp SEMICOLON  &kp L               &kp D                 &kp W         &kp V             &kp Z
-&hml LCTRL ESC  &hml LEFT_ALT C  &hml LEFT_CONTROL I  &hml LEFT_COMMAND E  &hml LEFT_SHIFT A  &kp COMMA         &sl 3          &hml LCTRL LPAR  &hml LGUI LT                     &hmr RGUI GT                   &hmr RCTRL RPAR  &sl 4      &kp DOT        &hmr RIGHT_SHIFT H  &hmr RIGHT_COMMAND T  &hmr RCTRL S  &hmr RIGHT_ALT N  &kp Q
-&kp LEFT_SHIFT  &kp G            &kp X                &kp J                &kp K              &kp MINUS                                         &hml LEFT_ALT HOME               &hmr RALT PG_UP                                            &kp FSLH       &kp R               &kp M                 &kp F         &kp P             &kp RSHFT
-&lt 7 AT_SIGN   &kp GRAVE        &caps_word           &kp DOWN             &kp UP                               &kp BACKSPACE  &kp DEL          &hml LA(LC(LG(LSHIFT))) END      &hmr LA(LC(LG(LSHIFT))) PG_DN  &kp ENTER        &kp SPACE                 &kp LEFT            &kp RIGHT             &kp LBKT      &kp RBKT          &lt 7 PRCNT
+&kp EQUAL       &kp N7     &kp N5      &kp N3    &kp N1  &kp N9            &sl 1                                                                                                            &sl 6      &kp N0         &kp N2    &kp N4     &kp N6    &kp N8    &kp BSLH
+&kp TAB         &kp B      &kp Y       &kp O     &kp U   &kp SINGLE_QUOTE  &sl 2                                                                                                            &sl 5      &kp SEMICOLON  &kp L     &kp D      &kp W     &kp V     &kp Z
+&hml LCTRL ESC  &kp C      &kp I       &kp E     &kp A   &kp COMMA         &sl 3          &hml LCTRL LPAR  &hml LGUI LT                     &hmr RGUI GT                   &hmr RCTRL RPAR  &sl 4      &kp DOT        &kp H     &kp T      &kp S     &kp N     &kp Q
+&kp LEFT_SHIFT  &kp G      &kp X       &kp J     &kp K   &kp MINUS                                         &hml LEFT_ALT HOME               &hmr RALT PG_UP                                            &kp FSLH       &kp R     &kp M      &kp F     &kp P     &kp RSHFT
+&lt 7 AT_SIGN   &kp GRAVE  &caps_word  &kp DOWN  &kp UP                    &kp BACKSPACE  &kp DEL          &hml LA(LC(LG(LSHIFT))) END      &hmr LA(LC(LG(LSHIFT))) PG_DN  &kp ENTER        &kp SPACE                 &kp LEFT  &kp RIGHT  &kp LBKT  &kp RBKT  &lt 7 PRCNT
             >;
         };
 
