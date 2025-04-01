@@ -210,11 +210,11 @@
 
         Engrammer {
             bindings = <
-&caps_word           &kp N7                &kp N5            &kp N3        &kp N1           &kp N9            &kp CARET                                                                                 &kp DOLLAR     &kp N0         &kp N2    &kp N4  &kp N6             &kp N8                 &kp PIPE
-&kp LS(TAB)          &kp B                 &kp Y             &kp O         &kp U            &kp SINGLE_QUOTE  &kp HASH                                                                                  &kp AT         &kp SEMICOLON  &kp L     &kp D   &kp W              &kp V                  &kp Z
-&hml RALT BACKSLASH  &kp C                 &kp I             &kp E         &kp A            &kp Z             &kp GRAVE      &hml LCTRL ESCAPE  &hml LGUI HOME         &hmr RGUI PG_UP  &hmr RCTRL ESC  &kp AMPERSAND  &kp Q          &kp H     &kp T   &kp S              &kp N                  &kp SLASH
-&kp LEFT_SHIFT       &hml LEFT_ALT G       &hml LCTRL X      &hml LSHFT J  &hml LEFT_GUI K  &kp COMMA                                           &hml LEFT_ALT END      &hmr RALT PG_DN                                 &kp PERIOD     &kp R     &kp M   &kp F              &kp P                  &kp RSHFT
-&lt 7 LT             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT      &kp RIGHT                          &kp BACKSPACE  &lt 1 DEL          &lt 2 MINUS            &lt 7 EQUAL      &lt 4 ENTER     &kp SPACE                     &kp DOWN  &kp UP  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &lt 7 GT
+&caps_word           &kp N7                &kp N5            &kp N3        &kp N1           &kp N9            &kp CARET                                                                                 &kp DOLLAR     &kp N0         &kp N2            &kp N4        &kp N6             &kp N8                 &kp PIPE
+&kp LS(TAB)          &kp B                 &kp Y             &kp O         &kp U            &kp SINGLE_QUOTE  &kp HASH                                                                                  &kp AT         &kp SEMICOLON  &kp L             &kp D         &kp W              &kp V                  &kp TAB
+&hml RALT BACKSLASH  &kp C                 &kp I             &kp E         &kp A            &kp Z             &kp GRAVE      &hml LCTRL ESCAPE  &hml LGUI HOME         &hmr RGUI PG_UP  &hmr RCTRL ESC  &kp AMPERSAND  &kp Q          &kp H             &kp T         &kp S              &kp N                  &hmr RALT FSLH
+&kp LEFT_SHIFT       &hml LEFT_ALT G       &hml LCTRL X      &hml LSHFT J  &hml LEFT_GUI K  &kp COMMA                                           &hml LEFT_ALT END      &hmr RALT PG_DN                                 &kp PERIOD     &hmr RIGHT_GUI R  &hmr RSHFT M  &hmr LCTRL F       &hmr LALT P            &kp RSHFT
+&lt 7 LT             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT      &kp RIGHT                          &kp BACKSPACE  &lt 1 DEL          &lt 2 MINUS            &lt 7 EQUAL      &lt 4 ENTER     &kp SPACE                     &kp DOWN          &kp UP        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &lt 7 GT
             >;
         };
 
