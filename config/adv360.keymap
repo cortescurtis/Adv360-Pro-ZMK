@@ -241,11 +241,11 @@
 
         Symbols {
             bindings = <
-&none            &none         &none            &none                     &none         &none         &none                                                     &none      &none        &none      &none      &none              &none      &none
-&kp EXCLAMATION  &kp LPAR      &kp LBRC         &kp RBRC                  &kp RPAR      &kp QUESTION  &none                                                     &none      &kp PERCENT  &kp GRAVE  &kp SQT    &kp DOUBLE_QUOTES  &kp SEMI   &kp COMMA
-&hml RALT HASH   &kp CARET     &kp EQUAL        &kp UNDERSCORE            &kp DOLLAR    &kp ASTERISK  &none          &kp ESC   &trans         &trans    &trans  &none      &kp HOME     &kp PG_DN  &kp PG_UP  &kp END            &kp COLON  &kp RALT
-&kp AT_SIGN      &hml LALT LT  &hmr LCTRL LBKT  &hml LSHFT RIGHT_BRACKET  &hml LGUI GT  &kp FSLH                               &trans         &trans                       &none        &kp LGUI   &kp LSHFT  &kp LCTRL          &kp LALT   &none
-&none            &none         &none            &none                     &none                       &kp AMPERSAND  &kp PIPE  &kp MINUS      &kp PLUS  &trans  &kp TILDE               &none      &none      &none              &none      &none
+&kp GRAVE        &kp LEFT_BRACKET  &kp LPAR         &kp RPAR          &kp RIGHT_BRACKET  &kp PERIOD    &none                                                      &none      &none  &none          &none             &none              &none     &none
+&kp EXCLAMATION  &kp COMMA         &kp LBRC         &kp RBRC          &kp SEMICOLON      &kp QUESTION  &none                                                      &none      &none  &none          &kp AT            &kp PERCENT        &none     &none
+&hml RALT HASH   &kp CARET         &kp EQUAL        &kp UNDERSCORE    &kp DOLLAR         &kp ASTERISK  &none          &trans     &trans         &trans    &trans  &none      &none  &kp AMPERSAND  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PLUS  &kp RALT
+&kp TILDE        &hml LALT LT      &hmr LCTRL PIPE  &hml LSHFT MINUS  &hml LGUI GT       &kp FSLH                                &trans         &trans                       &none  &kp LGUI       &kp LSHFT         &kp LCTRL          &kp LALT  &none
+&none            &none             &none            &none             &none                            &kp BACKSLASH  &kp COLON  &kp MINUS      &kp PLUS  &trans  &kp TILDE         &none          &none             &none              &none     &none
             >;
         };
 
