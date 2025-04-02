@@ -210,21 +210,21 @@
 
         Engrammer {
             bindings = <
-&caps_word           &kp N7                &kp N5            &kp N3        &kp N1           &kp N9            &kp CARET                                                                                 &kp DOLLAR     &kp N0         &kp N2            &kp N4        &kp N6             &kp N8                 &kp PIPE
+&caps_word           &kp N7                &kp N5            &kp N3        &kp N1           &kp N9            &kp CARET                                                                                 &kp DOLLAR     &kp N0         &kp N2            &kp N4        &kp N6             &kp N8                 &kp GRAVE
 &kp LS(TAB)          &kp B                 &kp Y             &kp O         &kp U            &kp SINGLE_QUOTE  &kp HASH                                                                                  &kp AT         &kp SEMICOLON  &kp L             &kp D         &kp W              &kp V                  &kp TAB
 &hml RALT BACKSLASH  &kp C                 &kp I             &kp E         &kp A            &kp Z             &kp GRAVE      &hml LCTRL ESCAPE  &hml LGUI HOME         &hmr RGUI PG_UP  &hmr RCTRL ESC  &kp AMPERSAND  &kp Q          &kp H             &kp T         &kp S              &kp N                  &hmr RALT FSLH
-&kp LEFT_SHIFT       &hml LEFT_ALT G       &hml LCTRL X      &hml LSHFT J  &hml LEFT_GUI K  &kp COMMA                                           &hml LEFT_ALT END      &hmr RALT PG_DN                                 &kp PERIOD     &hmr RIGHT_GUI R  &hmr RSHFT M  &hmr LCTRL F       &hmr LALT P            &kp RSHFT
-&lt 4 LT             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT      &kp RIGHT                          &kp BACKSPACE  &lt 1 DEL          &lt 2 MINUS            &lt 4 EQUAL      &lt 3 ENTER     &kp SPACE                     &kp DOWN          &kp UP        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &lt 4 GT
+&lt 4 MINUS          &hml LEFT_ALT G       &hml LCTRL X      &hml LSHFT J  &hml LEFT_GUI K  &kp COMMA                                           &hml LEFT_ALT END      &hmr RALT PG_DN                                 &kp PERIOD     &hmr RIGHT_GUI R  &hmr RSHFT M  &hmr LCTRL F       &hmr LALT P            &lt 4 EQUAL
+&kp LBRC             &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT      &kp RIGHT                          &kp BACKSPACE  &lt 1 DEL          &lt 2 MINUS            &lt 4 EQUAL      &lt 3 ENTER     &kp SPACE                     &kp DOWN          &kp UP        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RBRC
             >;
         };
 
-        Number {
+        NumNav {
             bindings = <
-&kp KP_NUMLOCK    &kp KP_NUMBER_7  &kp KP_NUMBER_5  &kp KP_NUMBER_3  &kp KP_NUMBER_1  &kp KP_NUMBER_9  &kp KP_LPAR                                      &kp KP_RPAR  &kp KP_NUMBER_0  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_NUMBER_6  &kp KP_NUMBER_8  &kp SCROLLLOCK
-&kp LEFT_BRACKET  &kp N7           &kp N5           &kp N3           &kp N1           &kp N9           &kp LT                                           &kp GT       &kp N0           &kp N2           &kp N4           &kp N6           &kp N8           &kp RBKT
-&kp RALT          &kp KP_PLUS      &kp KP_MINUS     &kp KP_MULTIPLY  &kp KP_DIVIDE    &kp KP_EQUAL     &kp LPAR     &trans  &trans      &trans  &trans  &kp RPAR     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &none            &kp RALT
-&caps_word        &kp LALT         &kp LCTRL        &kp LSHFT        &kp LGUI         &kp COMMA                             &trans      &trans                       &kp DOT          &kp LGUI         &kp LSHFT        &kp LCTRL        &kp LALT         &caps_word
-&none             &none            &none            &none            &none                             &trans       &trans  &trans      &trans  &trans  &trans                        &none            &none            &none            &none            &none
+&none       &kp SYSREQ  &kp INS    &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                                           &none      &none                 &kp KP_NUM       &kp KP_DIVIDE     &kp KP_MULTIPLY   &kp KP_MINUS        &none
+&none       &kp HOME    &kp PG_DN  &kp PG_UP       &kp END          &none  &none                                           &none      &kp DOLLAR            &kp KP_N7        &kp KP_N8         &kp KP_N9         &kp KP_PLUS         &kp PERCENT
+&kp RALT    &kp LEFT    &kp DOWN   &kp UP          &kp RIGHT        &none  &none   &trans  &trans      &trans  &trans      &none      &kp LEFT_PARENTHESIS  &kp KP_N4        &kp KP_N5         &kp KP_N6         &kp KP_COMMA        &hmr RALT RPAR
+&caps_word  &kp LALT    &kp LCTRL  &kp LSHFT       &kp LGUI         &none                  &trans      &trans                         &kp HASH              &hmr LGUI KP_N1  &hmr LSHFT KP_N2  &hmr LCTRL KP_N3  &hmr LALT KP_EQUAL  &kp CARET
+&none       &none       &none      &none           &none                   &trans  &trans  &trans      &trans  &kp KP_DOT  &kp KP_N0                        &none            &none             &none             &none               &none
             >;
         };
 
