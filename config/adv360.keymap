@@ -230,11 +230,11 @@
 
         FunMouse {
             bindings = <
-&none     &none     &none      &none      &none     &none  &none                                       &none  &none  &none         &none          &none          &none          &none
-&none     &none     &none      &none      &none     &none  &none                                       &none  &none  &kp F7        &kp F8         &kp F9         &kp F10        &none
-&kp RALT  &none     &none      &none      &none     &none  &none   &trans  &trans      &trans  &trans  &none  &none  &kp F4        &kp F5         &kp F6         &kp F11        &kp RALT
-&none     &kp LALT  &kp LCTRL  &kp LSHFT  &kp LGUI  &none                  &trans      &trans                 &none  &hmr LGUI F1  &hmr LSHFT F2  &hmr LCTRL F3  &hmr LALT F12  &none
-&none     &none     &none      &none      &none            &trans  &trans  &trans      &trans  &none   &none         &none         &none          &none          &none          &none
+&none     &none         &none             &none           &none             &none  &none                                       &none  &none  &none                  &none                &none                  &none         &none
+&none     &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &none  &none                                       &none  &none  &kp F10                &kp F11              &kp F12                &none         &none
+&kp RALT  &none         &none             &none           &none             &none  &none   &trans  &trans      &trans  &trans  &none  &none  &hmr RIGHT_COMMAND F7  &hmr RIGHT_SHIFT F8  &hmr RIGHT_CONTROL F9  &kp LEFT_ALT  &kp RALT
+&none     &none         &none             &none           &none             &none                  &trans      &trans                 &none  &kp F4                 &kp F5               &kp F6                 &none         &none
+&to 2     &none         &none             &none           &none                    &trans  &trans  &trans      &trans  &none   &none         &kp F1                 &kp F2               &kp F3                 &none         &none
             >;
         };
 
