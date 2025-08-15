@@ -37,11 +37,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                    &mo 3                       &kp N6  &kp N7    &kp N8        &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp SQT    &kp COMMA   &kp DOT   &kp P      &kp Y   &sk LA(LC(LEFT_SHIFT))                                                                    &sk LA(LC(LG(LEFT_SHIFT)))  &kp F   &kp G     &kp C         &kp R     &kp L     &kp SLASH
-&kp ESC    &kp A      &kp O       &kp E     &kp U      &kp I   &bt_hold BT_SEL 0 1     &kp LCTRL  &kp LGUI               &sk RIGHT_GUI        &sk RCTRL  &bt_hold BT_SEL 0 3         &kp D   &kp H     &kp T         &kp N     &kp S     &kp BACKSLASH
-&sk LSHFT  &kp SEMI   &kp Q       &kp J     &kp K      &kp X                                      &mt LEFT_ALT HOME      &mt LEFT_ALT PG_UP                                          &kp B   &kp M     &kp W         &kp V     &kp Z     &sk RSHFT
-&mo 2      &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL    &mt RIGHT_ALT END      &mt RIGHT_ALT PG_DN  &kp ENTER  &kp SPACE                           &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL                       &kp N1              &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                    &mo 3                   &kp N6  &kp N7    &kp N8        &kp N9    &kp N0              &kp MINUS
+&hm LA(LC(LG(LEFT_SHIFT))) TAB  &kp SQT             &kp COMMA   &kp DOT   &kp P      &kp Y   &sk LA(LC(LEFT_SHIFT))                                                                    &sk LA(LC(LEFT_SHIFT))  &kp F   &kp G     &kp C         &kp R     &kp L               &hm RA(RC(RG(RIGHT_SHIFT))) SLASH
+&hm LEFT_CONTROL ESC            &kp A               &kp O       &kp E     &kp U      &kp I   &kp LPAR                &kp LCTRL  &kp LGUI               &sk RIGHT_GUI        &sk RCTRL  &kp RPAR                &kp D   &kp H     &kp T         &kp N     &kp S               &hm RIGHT_CONTROL BACKSLASH
+&sk LSHFT                       &kp SEMI            &kp Q       &kp J     &kp K      &kp X                                      &mt LEFT_ALT HOME      &mt LEFT_ALT PG_UP                                      &kp B   &kp M     &kp W         &kp V     &kp Z               &sk RSHFT
+&mo 2                           &hm LEFT_GUI GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL    &mt RIGHT_ALT END      &mt RIGHT_ALT PG_DN  &kp ENTER  &kp SPACE                       &kp DOWN  &kp UP_ARROW  &kp LBKT  &hm RIGHT_GUI RBKT  &mo 2
             >;
         };
 
