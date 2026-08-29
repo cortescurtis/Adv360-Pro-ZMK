@@ -37,11 +37,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL                       &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                    &mo 3                   &kp N6  &kp N7    &kp N8        &kp N9    &kp N0             &kp MINUS
-&hm LA(LC(LG(LEFT_SHIFT))) TAB  &kp SQT    &kp COMMA   &kp DOT   &kp P      &kp Y   &sk LA(LC(LEFT_SHIFT))                                                                    &sk LA(LC(LEFT_SHIFT))  &kp F   &kp G     &kp C         &kp R     &kp L              &hm RA(RC(RG(RIGHT_SHIFT))) SLASH
-&hm LEFT_CONTROL ESC            &kp A      &kp O       &kp E     &kp U      &kp I   &kp LPAR                &kp LCTRL  &kp LGUI               &sk RIGHT_GUI        &sk RCTRL  &kp RPAR                &kp D   &kp H     &kp T         &kp N     &kp S              &hm RIGHT_CONTROL BACKSLASH
-&kp LSHFT                       &kp SEMI   &kp Q       &kp J     &kp K      &kp X                                      &mt LEFT_ALT HOME      &mt LEFT_ALT PG_UP                                      &kp B   &kp M     &kp W         &kp V     &kp Z              &sk RSHFT
-&mo 2                           &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                &kp DEL    &mt RIGHT_ALT END      &mt RIGHT_ALT PG_DN  &kp ENTER  &kp SPACE                       &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RIGHT_BRACKET  &mo 2
+&kp EQUAL   &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 1                                                                                        &mo 3                       &kp N6  &kp N7    &kp N8        &kp N9    &kp N0             &kp MINUS
+&kp TAB     &kp SQT    &kp COMMA   &kp DOT   &kp P      &kp Y   &sk LA(LC(LEFT_SHIFT))                                                                        &sk LA(LC(LEFT_SHIFT))      &kp F   &kp G     &kp C         &kp R     &kp L              &kp SLASH
+&kp ESCAPE  &kp A      &kp O       &kp E     &kp U      &kp I   &sk LA(LC(LG(LEFT_SHIFT)))  &kp LCTRL  &kp LGUI               &sk RIGHT_GUI        &sk RCTRL  &sk LA(LC(LG(LEFT_SHIFT)))  &kp D   &kp H     &kp T         &kp N     &kp S              &kp BACKSLASH
+&kp LSHFT   &kp SEMI   &kp Q       &kp J     &kp K      &kp X                                          &mt LEFT_ALT HOME      &mt LEFT_ALT PG_UP                                          &kp B   &kp M     &kp W         &kp V     &kp Z              &sk RSHFT
+&mo 2       &kp GRAVE  &caps_word  &kp LEFT  &kp RIGHT          &kp BSPC                    &kp DEL    &mt RIGHT_ALT END      &mt RIGHT_ALT PG_DN  &kp ENTER  &kp SPACE                           &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RIGHT_BRACKET  &mo 2
             >;
         };
 
@@ -59,11 +59,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                               &mo 3            &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &trans           &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &trans  &trans      &trans  &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &trans      &trans                           &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans           &trans  &trans      &trans  &trans  &trans                   &trans  &trans  &trans   &trans   &trans
             >;
         };
 
